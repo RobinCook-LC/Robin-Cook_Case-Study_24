@@ -4,20 +4,20 @@
         "title": "Anruf",
         "message": "Bitte kontaktiere die Ansprechperson und kläre jegliche offene Fragen.",
         "cost_estimate_seconds": 1000,
-        "due" : "today"
+        "due": "today"
     },
     {
         "id": 2,
         "title": "Dokumentation",
         "message": "Dokumentiere den aktuellen Stand des Projektfortschritts dieses Kunden",
         "cost_estimate_seconds": 300,
-        "due" : "yesterday"
+        "due": "yesterday"
     },
     {
         "id": 3,
         "title": "Archivieren",
         "message": "Wenn alle Probleme gelöst sind, archiviere den Kunden",
         "cost_estimate_seconds": 60,
-        "due" : "tomorrow"
+        "due": "tomorrow"
     }
 ]
