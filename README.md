@@ -1,6 +1,6 @@
 # case-study
 
-This is a base install of Vue 3 with TypeScript and Cypress similar to our own development environment.
+This is a base installation of Vue 3 with TypeScript and Cypress similar to our own development environment.
 
 ## Task
 Your task is to develop an application/component to display the information stored in src/data/dummy.json.
@@ -10,10 +10,17 @@ The goal is to display the information for different tasks for a user.
 There are several tasks that can be switched between and completed.
 The time spent on each task should be tracked and displayed as well as sent to the imaginary backend.
 
+### User Story
+As a user, I am working in the Customer Success department and my job is it to make restaurants better. I have a system
+that assigns me tasks that I need to complete. Because many of the tasks needs to be done while talking to the
+restaurant on the phone, I need to be able to switch between multiple tasks of the same restaurant quickly without
+losing data (like text inputs) in the hidden tasks. We want to be able to analyse afterward how much time we spent on each task
+to optimize our processes and also for me that I can see how much time I spent on each task and know when I need to finish it.
+
 ### Planning Phase
 After reading these requirements spent a few minutes to plan your approach. 
 - Create a simple diagram or list of the components you will need,
-how they will interact and how data gets passed and/or stored
+  how they will interact and how data gets passed and/or stored
 - Plan the project and create an estimate of how long each part will take (No need to split it into more than two or three parts)
 - Document any suggestions or requirements for the backend where you receive and store your data
 
@@ -29,11 +36,18 @@ We want a 3 part layout
 3. The user can mark a task as completed, which sends a message with the task id and time spent to the imaginary backend
 
 ### Technical Requirements
-1. Appropriately comment your code, make sure it readable but don't overdo it
-2. Write Cypress test(s) for your application and/or component(s)
+1. Code needs to explain itself. Comment where necessary but don't overdo it
+2. Code readability is important. Use meaningful variable names and split your code into functions where it makes sense
+3. Use the provided useImaginaryBackend to mock the backend calls
+4. Use meaningful state management to hold you timer data. You can use pinia for that, but it is not required for this task.
+5. Keep in mind what happens if the tab loses fokus. You can ignore data loss when the user closes the tab. 
+6. Write Cypress test(s) for your application and/or component(s)
 - The test(s) should cover the functionality of switching between tasks 
 - The test(s) should cover the functionality of pausing and resuming the timer
-- Optionally hook into your http call to the imaginary backend to validate the data that is sent
+- Optionally hook into your save call to the imaginary backend to validate the data that is sent
+
+### No one is born a master
+If you have any questions or need help, please ask us. We are a team, and we are here to help each other.
 
 ### Submitting your work
 - Create a fork of this repository and push your work to it
